@@ -1,0 +1,67 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image-xicon" href="">
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <title>Juan Najul Web</title>
+    {% block script %}
+    {% endblock %}
+</head>
+<body>
+    <div id="website-area">
+        <header id="header" class="menu-fixed">
+            <div id="logo">
+                <a href="">
+                    <h2>&#60;Juan Najul Villegas Web/&#62;</h2>
+                </a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li>
+                        <a href="">Home</a>
+                    </li>
+                    
+                    <li>
+                        <a href="">
+                            <span id="username-title">Juan Najul Web</span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="">Log In</a>
+                    </li>
+                    
+                    <li>
+                        <a href="">Register</a>
+                    </li>
+                    
+                    <li>
+                        <a href="">Log out</a>
+                    </li>
+                    
+                </ul>
+            </nav>
+        </header>
+            
+        <div class="body">
+            {% block body %}
+            {% endblock %}
+        </div>
+
+        <footer>
+            <div id="footer-container">
+                <div id="footer-content">
+                    <h3>Juan Najul Web</h3>
+                    <p>juannajulvillegas@gmail.com</p>
+                    <p>&copy; Copyright. All rights reserved</p>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+</body>
+</html>
