@@ -4,7 +4,279 @@
     margin: 0 auto;
     padding: 0px;
     box-sizing: border-box;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+}
+
+.clearfix{
+    float: none;
+    clear: both;
+}
+
+#website-area{
+    width: 100%;
+}
+
+
+/* CSS styles for nav */
+
+#header{
+    width: 100%;
+    height: 75px; /*+ 20px*/
+    border-bottom: 1px solid rgba(68, 67, 67, 0.5);
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    box-shadow: -3px 1px 7px rgb(82, 81, 81);
+}
+
+.menu-fixed{
+    position: sticky;
+    z-index: 1000;
+    top: 0px;
+    background: #f7f7f7;
+}
+
+#logo{
+    display:flex;
+    background: linear-gradient(to left, #9934ef   0%, #5e09f0 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 0 10px 0 20px;
+    border: 0px solid #50aa72;
+}
+
+
+#logo h2{
+    width: 100%;
+    padding-top: 5px;
+    font-size: 50px;
     font-family: Arial, Helvetica, sans-serif;
-    color: red;
-    background: red;
+    font-weight: bolder;
+    letter-spacing: 1px;
+}
+
+#nav{
+    display: flex;
+    flex-grow: 1;
+    height: 22px;
+}
+
+#nav > ul{
+    margin: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    flex-grow: 1;
+    height: 100%;
+    border: 0px solid blue;  
+}
+
+#nav ul li{
+    margin: 0;
+    margin-right: 0px;
+    margin-right: 5%; /* Was 7% */
+    height: 100%;
+    border: 0px solid orange;
+}
+
+#nav > ul a{
+    color: #353536;
+    transition: all 400ms;
+}
+
+#nav ul li a:hover{
+    display: block;
+    color: #b662ff;
+    transform: scale(1.09,1.09);
+}
+/*
+@media (max-width: 573px){
+    #nav ul li a{
+        font-size: 15px;
+    }
+}
+*/
+@media (max-width: 550px){
+    #header{
+        height: 122px; /*sume 40px*/
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    #logo{
+        width: 100%;
+        margin: 0 0 0 0;
+        flex-basis: 50%;
+        align-items: center;
+    }
+
+    #logo h2 {
+        padding-top: 8px;
+    }
+
+    #nav{
+        flex-basis: 45%;
+        width: 100%;
+        padding-top: 10px;
+    }
+
+    #nav > ul{
+        width: 100%;
+        justify-content: space-evenly;
+    }
+
+    #nav ul li{
+        margin: 0;
+        line-height: 35px;
+    }
+    #nav ul li a{
+        font-size: 15px;
+    }
+
+}
+
+/*
+@media (max-width: 420px){
+    #nav ul li a{
+        font-size: 13px;
+    }
+}
+*/
+
+/* Index styles */
+
+#index-area{
+    width: 100%;
+    height: auto;
+    margin: 0;
+    display: block;
+    border: 0px solid red;
+}
+
+#banner-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 50vh;
+    background: #171B26;
+    border: 0px solid blue;
+}
+
+
+#banner-content{
+    display: flex;
+}
+
+#banner-content #banner-title{
+    color: #fff;
+    font-size: 60px;
+    font-weight: 500;
+}
+
+#banner-content .option{
+    margin-left: 15px;
+    height: 90px;
+    line-height: 90px;
+    overflow: hidden;
+}
+
+.option li{
+    list-style: none;
+    color: #b662ff;
+    font-size: 60px;
+    font-weight: 600;
+    position: relative;
+    top: 0;
+    animation: slide 12s steps(4) infinite;
+}
+
+@keyframes slide{
+    100%{
+        top: -360px
+    }
+}
+    .option li span{
+        position: relative;
+        margin: 5px 0;
+        line-height: 90px;
+    }
+
+    .option li span:after{
+        content:'';
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #171B26;
+        border-left: 3px solid #50aa72;
+        animation: typing 3s steps(10) infinite;
+    }
+    @keyframes typing{
+        40%, 60%{
+            left: calc(100% + 30px);
+        }
+        100%{
+            left: 0;
+        }
+    }
+
+@media (max-width: 900px){
+    #banner-content{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #banner-content .option #banner-web,
+    #banner-content .option #banner-code{
+        margin-left: 70px;
+    }
+    #banner-content .option #banner-backend{
+        margin-left: 5px;
+    }
+    #banner-content .option #banner-developer{
+        margin-left: 0px;
+    }
+}
+
+#card-area{
+    width: 100%;
+    height: 40vh;
+    border: 1px solid red;
+}
+
+.cards{
+    
+}
+
+/* Footer styles */
+#footer-container{
+    
+
+}
+
+#footer-content{
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 30px;
+}
+
+#footer-content h3,
+#footer-content p{
+    margin-bottom: 3px;
+}
+
+#footer-content h3{
+    color: #b662ff;
+}
+
+#footer-content p{
+    font-size: 15px;
+    color: #b662ff;
+    /*#50aa72*/
 }
