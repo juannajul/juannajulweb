@@ -290,7 +290,7 @@
     width: 100%;
     min-height: 400px;
     background: rgb(140,7,255);
-    background: linear-gradient(0deg, rgba(140,7,255,1) 0%, rgba(153,52,224,1) 100%);
+    background: linear-gradient(0deg, rgb(147, 36, 245) 0%, rgba(153,52,224,1) 100%);
     box-shadow: 0px 2px 9px rgb(82, 81, 81);
 }
 
@@ -300,7 +300,7 @@
     flex-flow: wrap;
     width: 100%;
     height: auto;
-    border: 1px solid black;
+    border: 0px solid black;
 }
 
 .skills-cards{
@@ -315,7 +315,17 @@
     max-width: 100px;
     min-width: 100;
     max-height: 100px;
+    min-height: 50px;
     margin-top: 45px;
+    transition: 400ms ;
+}
+
+#fastapi-logo{
+    width: 150px;
+}
+
+.skills-cards img:hover{
+    transform: scale(1.05, 1.05);
 }
 
 @media (max-width: 1000px){
@@ -400,8 +410,22 @@
   }
 }
 
+.purple-card-area .down-button{
+    background: #ffffff;
+}
+
+.purple-card-area .down-button .arrow{
+    border-right: 3px #9934ef solid;
+    border-bottom: 3px #9934ef solid;
+}
+
 .class-dark-area .down-button{
     background: #b662ff;
+}
+
+.purple-card-area .down-button .arrow:before{
+    border-right: 3px #9934ef solid;
+    border-bottom: 3px #9934ef solid;
 }
 
 /* Footer styles */
