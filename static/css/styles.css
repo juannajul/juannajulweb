@@ -1,3 +1,4 @@
+
 *{
     text-decoration: none;
     list-style: none;
@@ -5,6 +6,7 @@
     padding: 0px;
     box-sizing: border-box;
     font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
 }
 
 .clearfix{
@@ -380,7 +382,8 @@
 }
 
 #up-button{
-    margin-bottom: 60px;
+    margin-top: 25px;
+    margin-bottom: -55px;
 }
 
 .down-button:hover{
@@ -478,6 +481,7 @@
 }
 
 .projects-img-container iframe{
+    margin-bottom: 10px;
     max-width: 500px;
     max-height: 300px;
 }
@@ -509,13 +513,7 @@
 .contact-form-content{
     width: 100%;
     margin-top: 15px;
-    text-align: left;
-}
-
-@media (max-width: 950px){
-    .contact-form-content{
-        text-align: center;
-    }
+    text-align: center;
 }
 
 .contact-form-name,
@@ -524,8 +522,9 @@
     width: 200px;
     height: 30px;
     margin-left: 2px;
-    padding: 5px;
+    padding: 8px;
     border: 1px solid rgba(68, 67, 67, 0.5);
+    border-radius: 10px;
 }
 
 .contact-form-message{
@@ -533,8 +532,10 @@
     min-width: 200px;
     margin-left: 2px;
     height: 200px;
-    padding: 3px;
+    padding: 5px;
     border: 1px solid rgba(68, 67, 67, 0.5);
+    border-radius: 10px;
+    resize: none;
 }
 
 .contact-button{
@@ -543,7 +544,7 @@
     margin-top: 20px;
     margin-bottom: -15px;
     border: 1px solid rgba(68, 67, 67, 0.5);
-    border-radius: 2px;
+    border-radius: 5px;
     background: #f7f7f7;
     font-family: 'Poppins';
     font-weight: 400;

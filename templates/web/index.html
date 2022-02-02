@@ -3,10 +3,10 @@
 {% load static %}
 {% block body %}
 
-    <section id="index-area">
+    <section id="index-area ">
         <div id="banner-container">
-
-            <div id="banner-content">
+            
+            <div id="banner-content" class="target3">
 
                 <h1 id="banner-title">Juan Najul</h1>
                 <ul class="option">
@@ -20,28 +20,35 @@
             </div>
             
             <div id="banner-button">
-                <div class="down-button">
-                    <div class="arrow"></div>
-                </div>
+                <a class="section1" href="#">
+                    <div class="down-button">
+                        <div class="arrow"></div>
+                    </div>
+                </a>
+                
             </div>
             
         </div>
-        
+        <div class="target1"></div>
         <div class="card-area">
-            <div class="card-container">
+            <div class="card-container ">
                 <h2 id="profile-title">Profile</h2>
                 <div class="info-card">
                     <p class="card-info">
                         My name is Juan Andres Najul, I'm from Venezuela and I'm a backend developer.
                         I'm a Electronic and Computer Engineering in my last year of career. I'm 
-                        apassionate about software and the tech world.
+                        apassionate about software and tech world.
                     </p>
                 </div>
             </div>
-            <div class="down-button">
-                <div class="arrow"></div>
-            </div>
+            <a class="section2" href="#">
+                <div class="down-button">
+                    <div class="arrow"></div>
+                </div>
+            </a>
+            
         </div>
+        
         <div class="purple-card-area">
             <div class="purple-card-container">
                 <h2 id="skills-title">Skills</h2>
@@ -88,6 +95,7 @@
                     </p>
                     <br />
                     <a class="projects-link" href="http://drinkteamclub.online/">drinkteamclub.online</a>
+                    <div class="target2"></div>
                     <div class="projects-img-container">
                         <iframe width="560" height="315" src="https://www.youtube.com/embed/wEvM8vmqiA4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
@@ -95,9 +103,12 @@
                     <a class="projects-link" href="https://github.com/juannajul">My github page for more projects</a>
                 </div>
             </div>
-            <div class="down-button" id="up-button">
-                <div class="arrow"></div>
-            </div>
+            <a class="section3" href="#">
+                <div class="down-button" id="up-button">
+                    <div class="arrow"></div>
+                </div>
+            </a>
+            
         </div>
 
         <div class="purple-content-card-area">
@@ -124,4 +135,8 @@
         </div>
     </section>
 
+{% endblock %}
+
+{% block script %}
+    <script src="{% static '/js/scroll.js' %}"></script>
 {% endblock %}
