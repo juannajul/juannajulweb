@@ -523,6 +523,7 @@
 .contact-form-email{
     width: 200px;
     height: 30px;
+    margin-left: 2px;
     padding: 5px;
     border: 1px solid rgba(68, 67, 67, 0.5);
 }
@@ -530,6 +531,7 @@
 .contact-form-message{
     width: 50%;
     min-width: 200px;
+    margin-left: 2px;
     height: 200px;
     padding: 3px;
     border: 1px solid rgba(68, 67, 67, 0.5);
