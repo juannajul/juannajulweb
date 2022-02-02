@@ -100,15 +100,25 @@
             </div>
         </div>
 
-        <div class="purple-card-area">
+        <div class="purple-content-card-area">
             <div class="purple-card-container">
-                <h2 id="skills-title">Contact</h2>
-                <div class="skills-cards-container">
-                   
+
+                <h2 id="contact-title">Contact</h2>
+                <div class="contact-cards-container">
+                    <div class="contact-form-container">
+                    <form action="POST">
+                        <div class="contact-form-content">{{form.name}}</div>
+                        <div class="contact-form-content">{{form.lastname}}</div>
+                        <div class="contact-form-content">{{form.email}}</div> 
+                        <div class="contact-form-content">{{form.message}}</div>
+                        <div class="contact-form-content">
+                            <button type="submit" class="contact-button">SUBMIT</button>
+                        </div>
+                   </form>
+                    </div>
+
                 </div>
-               <!-- <div class="down-button">
-                    <div class="arrow"></div>
-                </div>-->
+               
             </div>
         </div>
     </section>

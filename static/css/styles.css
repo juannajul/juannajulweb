@@ -256,7 +256,8 @@
 
 #profile-title,
 #skills-title,
-#projects-title{
+#projects-title,
+#contact-title{
     margin: 0 auto;
     margin-top: 110px;
     text-align: center;
@@ -265,7 +266,8 @@
     color: #9934ef ;
 }
 
-#skills-title{
+#skills-title,
+#contact-title{
     color: #ffffff;
     padding-top: 15px;
 }
@@ -274,7 +276,8 @@
     margin-top: 70px;
 }
 
-.info-card{
+.info-card,
+.contact-cards-container{
     width: 70%;
     height: auto;
     margin: 0 auto;
@@ -282,6 +285,11 @@
     margin-bottom: 140px;
     text-align: center;
     overflow: hidden;
+}
+
+.contact-cards-container{
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 .info-card-projects{
@@ -296,12 +304,17 @@
     overflow: hidden;
 }
 
-.purple-card-area{
+.purple-card-area,
+.purple-content-card-area{
     width: 100%;
     min-height: 400px;
     background: rgb(140,7,255);
     background: linear-gradient(0deg, rgb(147, 36, 245) 0%, rgba(153,52,224,1) 100%);
     box-shadow: 0px 2px 9px rgb(82, 81, 81);
+}
+
+.purple-content-card-area{
+    margin-top: -45px;
 }
 
 .skills-cards-container{
@@ -483,6 +496,63 @@
     }
 }
 
+.purple-content-card-area .contact-form-container{
+    width: 100%;
+}
+
+.contact-form-container{
+    width: 100%;
+    margin: 20px 0 50px;
+    
+}
+
+.contact-form-content{
+    width: 100%;
+    margin-top: 15px;
+    text-align: left;
+}
+
+@media (max-width: 950px){
+    .contact-form-content{
+        text-align: center;
+    }
+}
+
+.contact-form-name,
+.contact-form-lastname,
+.contact-form-email{
+    width: 200px;
+    height: 30px;
+    padding: 5px;
+    border: 1px solid rgba(68, 67, 67, 0.5);
+}
+
+.contact-form-message{
+    width: 50%;
+    min-width: 200px;
+    height: 200px;
+    padding: 3px;
+    border: 1px solid rgba(68, 67, 67, 0.5);
+}
+
+.contact-button{
+    width: 100px;
+    height: 30px;
+    margin-top: 20px;
+    margin-bottom: -15px;
+    border: 1px solid rgba(68, 67, 67, 0.5);
+    border-radius: 2px;
+    background: #f7f7f7;
+    font-family: 'Poppins';
+    font-weight: 400;
+    cursor: pointer;
+    transition: 600ms ease;
+}
+
+.contact-button:hover{
+    border-radius: 35px;
+    background: #13aff0;
+}
 /* Footer styles */
 #footer-container{
     width: 100%;
