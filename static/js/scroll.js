@@ -4,26 +4,23 @@ document.addEventListener('DOMContentLoaded', function() {
     var section3 = document.querySelector('.section3');
 
     section1.addEventListener('click', function(){
-        smoothScroll('.target1', 1000);
+        smoothScroll('.target1', 800);
     })
 
     section2.addEventListener('click', function(){
-        smoothScroll('.target2', 900);
+        smoothScroll('.target2', 700);
     })
 
     section3.addEventListener('click', function(){
-        smoothScroll('.target3', 1500);
+        smoothScroll('.target3', 1000);
     })
 
 });
 function smoothScroll(target, duration){
     var target = document.querySelector(target);
     var targetPosition = target.getBoundingClientRect().top;
-    console.log(targetPosition)
-    var startPosition = window.scrollY;
-    console.log(startPosition)
+    var startPosition = window.pageYOffset;
     var distance = targetPosition - startPosition;
-    console.log(distance)
     var startTime = null;
     function animation(currentTime){
         if(startTime == null) startTime = currentTime;
