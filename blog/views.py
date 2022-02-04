@@ -4,6 +4,7 @@ from django.template.loader import get_template
 from django.core.mail import EmailMultiAlternatives
 from django.conf import settings
 
+
 # Create your views here.
 
 def send_email(name, lastname, email, message):
@@ -18,7 +19,7 @@ def send_email(name, lastname, email, message):
     content = template.render(context)
 
     email = EmailMultiAlternatives(
-        f'Email from {name} {lastname} {email}',
+        f'Email from {name.capitalize()} {lastname.capitalize()} {email}',
         message,
         settings.EMAIL_HOST_USER,
         [
