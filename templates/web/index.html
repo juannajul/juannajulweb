@@ -54,28 +54,28 @@
                 <h2 id="skills-title">Skills</h2>
                 <div class="skills-cards-container">
                     <div class="skills-cards">
-                        <img src="/static/img/python-logo.svg.png" alt="Python">
+                        <img src="{% static 'img/python-logo.svg.png' %}" alt="Python">
                     </div>
                     <div class="skills-cards">
-                        <img src="/static/img/django-logo.png" alt="Django">
+                        <img src="{% static 'img/django-logo.png' %}" alt="Django">
                     </div>
                     <div class="skills-cards">
-                        <img src="/static/img/js-logo.png" alt="JavaScript">
+                        <img src="{% static 'img/js-logo.png' %}" alt="JavaScript">
                     </div>
                     <div class="skills-cards">
-                        <img src="/static/img/psql-logo.png" alt="Postgresql">
+                        <img src="{% static 'img/psql-logo.png' %}" alt="Postgresql">
                     </div>
                     <div class="skills-cards">
-                        <img src="/static/img/html-css-logo.png" alt="Html Css">
+                        <img src="{% static 'img/html-css-logo.png' %}" alt="Html Css">
                     </div>
                     <div class="skills-cards">
-                        <img src="/static/img/git.svg.png" alt="Git">
+                        <img src="{% static 'img/git.svg.png'%}" alt="Git">
                     </div>
                     <div class="skills-cards">
-                        <img src="/static/img/fastapi.svg" alt="FastApi">
+                        <img src="{% static 'img/fastapi.svg' %}" alt="FastApi">
                     </div>
                     <div class="skills-cards">
-                        <img src="/static/img/rest-api.png" alt="RestApi">
+                        <img src="{% static 'img/rest-api.png' %}" alt="RestApi">
                     </div>
                 </div>
                <!-- <div class="down-button">
@@ -91,7 +91,7 @@
                     <p class="card-info projects-info">
                         TeamDreamClub is a web application that offers great choices of drinks and cocktails.
                         In this web app the user can look for a variety of cocktails by using the "Random button" or search for its favorites drinks by its cocktail name, 
-                        category or ingredient. Each search will show: the cocktail name, picture, category, ingredients and instructions of each drink.
+                        category or ingredient. Each search will show: cocktail name, picture, category, ingredients and instructions of each drink.
                     </p>
                     <br />
                     <a class="projects-link" href="http://drinkteamclub.online/">drinkteamclub.online</a>
@@ -138,5 +138,5 @@
 {% endblock %}
 
 {% block script %}
-    <script src="{% static '/js/scroll.js' %}"></script>
+    <script src="{% static 'js/scroll.js' %}"></script>
 {% endblock %}
