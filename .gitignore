@@ -7,6 +7,7 @@ env.bak/
 venv.bak/ 
 
 static/
+static
 
 *.log
 *.pot
