@@ -41,9 +41,6 @@
 
 #logo{
     display:flex;
-    background: linear-gradient(to left, #9934ef   0%, #5e09f0 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
     margin: 0 10px 0 20px;
     border: 0px solid #50aa72;
 }
@@ -52,6 +49,7 @@
 #logo h2{
     width: 100%;
     padding-top: 5px;
+    color: #b662ff;
     font-size: 50px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bolder;
@@ -95,7 +93,7 @@
 
 @media (max-width: 550px){
     #header{
-        height: 122px; /*sume 40px*/
+        height: 130px; /*sume 40px*/
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -110,8 +108,10 @@
         align-items: center;
     }
 
+
     #logo h2 {
-        padding-top: 8px;
+        display: block;
+        text-align: center;
     }
 
     #nav{
@@ -312,6 +312,7 @@
     width: 100%;
     height: auto;
     border: 0px solid black;
+    margin-bottom: 10px;
 }
 
 .skills-cards{
@@ -533,11 +534,11 @@
     margin-bottom: -15px;
     border: 1px solid rgba(68, 67, 67, 0.5);
     border-radius: 5px;
-    background: #f7f7f7;
+    background: #13aff0;
     font-family: 'Poppins';
     font-weight: 400;
     cursor: pointer;
-    transition: 600ms ease;
+    transition: 300ms ease;
 }
 
 .contact-button:hover{

@@ -51,6 +51,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'blog',
+    'storages',
 ]
 
 MIDDLEWARE = [
@@ -128,14 +129,6 @@ USE_I18N = True
 USE_TZ = True
 
 
-# Static files (CSS, JavaScript, Images)
-# https://docs.djangoproject.com/en/4.0/howto/static-files/
-
-STATIC_URL = 'static/'
-STATICFILES_DIRS = (
-    BASE_DIR / "static",
-)
-
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
@@ -153,7 +146,7 @@ MY_EMAIL = env('MY_EMAIL')
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.0/howto/static-files/
-"""
+
 # Boto3
 STATICFILES_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
 # AWS
@@ -168,4 +161,6 @@ AWS_LOCATION = 'static'
 STATIC_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{AWS_LOCATION}/'
 
 # Django Static Files Directory
-STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)"""
+STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
+
+#STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
