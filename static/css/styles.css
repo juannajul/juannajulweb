@@ -472,14 +472,16 @@
 }
 
 @media (max-width: 580px){
-    .projects-img-container iframe{
+    .projects-img-container iframe,
+    .projects-img-container img{
         max-width: 400px;
         max-height: 250px;
     }
 }
 
 @media (max-width: 440px){
-    .projects-img-container iframe{
+    .projects-img-container iframe,
+    .projects-img-container img{
         max-width: 300px;
         max-height: 200px;
     }
